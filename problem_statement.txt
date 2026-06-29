@@ -1,1 +1,14 @@
-problem statement 
+Switched Reluctance Motors (SRMs) are widely used in electric vehicles, industrial automation, aerospace, and renewable energy systems because of their simple construction, high efficiency, low cost, and fault-tolerant nature. However, despite their robustness, SRMs are still susceptible to faults such as rotor eccentricity, winding faults, bearing failures, and converter faults.
+
+Traditional fault detection methods mainly rely on manual inspection, periodic maintenance, or fixed threshold monitoring. These approaches have several limitations:
+
+Faults may remain undetected until they become severe.
+Manual inspection is time-consuming and expensive.
+Unexpected motor failures increase downtime and maintenance costs.
+Continuous real-time monitoring is difficult using conventional techniques.
+
+To overcome these limitations, an intelligent fault detection system is required that can automatically identify faults at an early stage.
+
+In this project, we use Finite Element Method (FEM) simulations in ANSYS Maxwell to generate motor data under both normal and faulty conditions. The important motor parameters, such as torque and winding current, are collected to create a dataset. A Random Forest machine learning algorithm is then trained to learn the patterns of healthy and faulty motor conditions. Once trained, the model can quickly classify whether the motor is operating normally or experiencing a fault.
+
+This enables early fault detection, predictive maintenance, reduced downtime, improved reliability, and longer motor life, making the system suitable for future real-time industrial applications.
